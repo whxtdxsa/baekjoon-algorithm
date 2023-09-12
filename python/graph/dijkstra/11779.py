@@ -1,7 +1,6 @@
 import sys
 import heapq
 
-
 def dijkstra(graph, start, end):
     d = [(float('inf'), []) for _ in range(len(graph))]
     d[start] = (0, [start])
@@ -38,6 +37,5 @@ def main():
     print(d)
     print(len(root))
     print(*root, sep = " ")
-
 
 main()
